@@ -1,0 +1,18 @@
+# IntelliJ
+.idea/
+
+# Flutter SDK
+flutter_windows_3.44.7-stable/
+
+# Spring Boot
+backend/target/
+
+# Node
+frontend/node_modules/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

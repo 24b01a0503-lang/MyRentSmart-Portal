@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.my-bookings-page{
+    min-height:100vh;
+    background:#f4f8ff;
+    padding:40px;
+}
+
+.booking-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.booking-header h1{
+    color:#2563eb;
+}
+
+.back-btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#1d4ed8;
+}
+
+.booking-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+    gap:25px;
+}
+
+.booking-card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.booking-card:hover{
+    transform:translateY(-6px);
+}
+
+.booking-card h2{
+    color:#2563eb;
+    margin-bottom:18px;
+}
+
+.booking-card p{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:12px 0;
+    color:#555;
+}
+
+.icon{
+    color:#2563eb;
+}
+
+.status{
+    display:inline-block;
+    margin-top:18px;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.status.pending{
+    background:#fef3c7;
+    color:#b45309;
+}
+
+.status.booked{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+.status.rejected{
+    background:#fee2e2;
+    color:#b91c1c;
+}
+
+.empty-card{
+    max-width:500px;
+    margin:80px auto;
+    background:white;
+    border-radius:20px;
+    padding:50px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.empty-icon{
+    font-size:70px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.empty-card h2{
+    margin-bottom:15px;
+}
+
+.empty-card p{
+    color:#666;
+}
+.cancel-btn{
+    margin-top:15px;
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    background:#e53935;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.cancel-btn:hover{
+    background:#c62828;
+}

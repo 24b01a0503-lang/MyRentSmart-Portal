@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.booking-page{
+    min-height:100vh;
+    background:#f4f8ff;
+    padding:40px;
+}
+
+.booking-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.booking-header h1{
+    color:#2563eb;
+}
+
+.back-btn{
+    padding:12px 20px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#1d4ed8;
+}
+
+.booking-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+    gap:25px;
+}
+
+.booking-card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.booking-card:hover{
+    transform:translateY(-6px);
+}
+
+.booking-card h2{
+    color:#2563eb;
+    margin-bottom:18px;
+}
+
+.booking-card p{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:12px 0;
+    color:#555;
+}
+
+.icon{
+    color:#2563eb;
+}
+
+.status{
+    display:inline-block;
+    margin-top:15px;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.status.pending{
+    background:#fef3c7;
+    color:#b45309;
+}
+
+.status.booked{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+.status.rejected{
+    background:#fee2e2;
+    color:#b91c1c;
+}
+
+.action-buttons{
+    margin-top:25px;
+    display:flex;
+    gap:15px;
+}
+
+.accept-btn,
+.reject-btn{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    color:white;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    transition:.3s;
+}
+
+.accept-btn{
+    background:#16a34a;
+}
+
+.accept-btn:hover{
+    background:#15803d;
+}
+
+.reject-btn{
+    background:#ef4444;
+}
+
+.reject-btn:hover{
+    background:#dc2626;
+}
+
+.empty-booking{
+    max-width:500px;
+    margin:80px auto;
+    background:white;
+    border-radius:20px;
+    padding:50px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.empty-icon{
+    font-size:70px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.empty-booking h2{
+    margin-bottom:15px;
+}
+
+.empty-booking p{
+    color:#666;
+}

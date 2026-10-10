@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.property-page{
+    min-height:100vh;
+    background:#f4f8ff;
+    padding:40px;
+}
+
+.property-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.property-header h1{
+    color:#2563eb;
+}
+
+.back-btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:#1d4ed8;
+}
+
+.property-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.property-card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.property-card:hover{
+    transform:translateY(-8px);
+}
+
+.card-top{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.house-icon{
+    font-size:40px;
+    color:#2563eb;
+}
+
+.card-top h2{
+    color:#222;
+}
+
+.property-info p{
+    margin:12px 0;
+    color:#555;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.info-icon{
+    color:#2563eb;
+}
+
+.description{
+    margin-top:20px;
+    line-height:1.6;
+    display:block !important;
+}
+
+.delete-btn{
+    margin-top:25px;
+    width:100%;
+    padding:12px;
+    background:#ef4444;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    transition:.3s;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}
+
+.empty-card{
+    max-width:500px;
+    margin:80px auto;
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.empty-icon{
+    font-size:70px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.empty-card h2{
+    margin-bottom:15px;
+    color:#222;
+}
+
+.empty-card p{
+    color:#666;
+}
+.property-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.property-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.house-icon {
+    font-size: 80px;
+    color: #777;
+    display: block;
+    margin: 40px auto;
+}
